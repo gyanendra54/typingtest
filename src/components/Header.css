@@ -1,0 +1,70 @@
+/* src/components/Header.css */
+
+/* Style for the header section */
+.header-container {
+    text-align: center;
+    margin-bottom: 20px; /* Space between the header and content */
+  }
+  
+  /* Style the image to be round */
+  .image-container {
+    margin-bottom: 10px; /* Adds a small space between the image and the title */
+  }
+  
+  .round-image {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Keep equal width and height for a circle */
+    border-radius: 50%; /* Make it a circle */
+    object-fit: cover; /* Ensures the image covers the entire space */
+    border: 2px solid #ccc; /* Optional border for better aesthetics */
+  }
+/* src/components/Header.css */
+
+/* General header styling */
+.header {
+    display: flex; /* Spread items between left and right */
+    align-items: center; /* Vertically center logo and title */
+    padding: 10px 20px; /* Space around the header */
+    background-color: #fff; /* Optional: Add background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for depth */
+    margin-bottom: 20px; /* Add space below the header */
+    border-radius: 20px;
+    margin-top: -20px;
+  }
+  
+  /* Logo styling */
+  
+  .mainheader {
+    font-size: 24px;
+    margin: 0;
+    
+    font-weight: 800;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, #f83504, #4f58aa); /* Gradient colors */
+    -webkit-background-clip: text; /* Ensure background is clipped to text */
+    -webkit-text-fill-color: transparent; /* Make text fill transparent to reveal gradient */
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+ 
+  
+  /* Title styling */
+  .title-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      /* Stack logo and title vertically on smaller screens */
+      margin-left: -20px;
+    }
+  
+    .logo-container {
+      margin-bottom: 10px; /* Add space between logo and title on small screens */
+    }
+  }
+    
